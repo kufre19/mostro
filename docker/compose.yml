@@ -23,7 +23,7 @@ services:
     ports:
       - '${MOSTRO_RELAY_LOCAL_PORT:-7000}:8080'
     volumes:
-      - './config/relay/data:/usr/src/app/db:Z'
+      - './config/relay/data:/usr/src/app/db'
       - './config/relay/config.toml:/usr/src/app/config.toml:ro,Z'
 
 networks:

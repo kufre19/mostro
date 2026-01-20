@@ -60,8 +60,8 @@ mod tests {
                                     relays = ['wss://relay.damus.io','wss://relay.mostro.network']"#;
 
     const LIGHTNING_SETTINGS: &str = r#"[lightning]
-                                            lnd_cert_file = '/home/user/.polar/networks/1/volumes/lnd/alice/tls.cert'
-                                            lnd_macaroon_file = '/home/user/.polar/networks/1/volumes/lnd/alice/data/chain/bitcoin/regtest/admin.macaroon'
+                                            lnd_cert_file = '/home/emmanuel/.polar/networks/1/volumes/lnd/alice/tls.cert'
+                                            lnd_macaroon_file = '/home/emmanuel/.polar/networks/1/volumes/lnd/alice/data/chain/bitcoin/regtest/admin.macaroon'
                                             lnd_grpc_host = 'https://127.0.0.1:10001'
                                             invoice_expiration_window = 3600
                                             hold_invoice_cltv_delta = 144
@@ -117,9 +117,9 @@ mod tests {
             toml::from_str(LIGHTNING_SETTINGS).expect("Failed to deserialize");
         assert_eq!(
             lightning_settings.lightning.lnd_cert_file,
-            "/home/user/.polar/networks/1/volumes/lnd/alice/tls.cert"
+            "/home/emmanuel/.polar/networks/1/volumes/lnd/alice/tls.cert"
         );
-        assert_eq!(lightning_settings.lightning.lnd_macaroon_file, "/home/user/.polar/networks/1/volumes/lnd/alice/data/chain/bitcoin/regtest/admin.macaroon");
+        assert_eq!(lightning_settings.lightning.lnd_macaroon_file, "/home/emmanuel/.polar/networks/1/volumes/lnd/alice/data/chain/bitcoin/regtest/admin.macaroon");
         assert_eq!(
             lightning_settings.lightning.lnd_grpc_host,
             "https://127.0.0.1:10001"

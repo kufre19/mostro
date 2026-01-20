@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../mostro_mobile"
+		},
+		{
+			"path": "../../rana"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "mostro",
+		"makefile.configureOnOpen": false
+	}
+}

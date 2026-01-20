@@ -38,8 +38,8 @@ WORKDIR /home/mostrouser
 COPY ./docker/settings.docker.toml ./docker/empty.mostro.db ./
 
 # Copy start script
-COPY ./docker/start.sh ./start.sh
-RUN chmod +x ./start.sh
+# COPY ./docker/start.sh ./start.sh
+# RUN chmod +x ./start.sh
 
 RUN chown -R mostrouser:mostrouser /home/mostrouser
 
@@ -47,4 +47,4 @@ RUN chown -R mostrouser:mostrouser /home/mostrouser
 USER mostrouser
 
 # Start mostro (copy settings and database if it's not created yet)
-CMD ["./start.sh"]
+# CMD ["./start.sh"]

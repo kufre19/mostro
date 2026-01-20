@@ -1,6 +1,8 @@
 # Build stage
 FROM rust:1.86-alpine AS builder
 
+
+
 # Install build dependencies
 RUN apk update && \
     apk add --no-cache cmake build-base sqlite-dev pkgconfig protoc perl git
@@ -8,9 +10,12 @@ RUN apk update && \
 # Set working directory
 WORKDIR /mostro
 
+
 # Copy Cargo.toml and Cargo.lock to leverage Docker cache
 COPY Cargo.toml Cargo.lock ./
 RUN cargo fetch
+
+
 
 # Copy source code
 COPY . .

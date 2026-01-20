@@ -19,7 +19,7 @@ payment_attempts = 3
 payment_retries_interval = 60
 
 [nostr]
-nsec_privkey = 'nsec1...'
+nsec_privkey = 'nsec1sl74g60wntnls033uujxuj5pg7d26m6sje2hl93h0xwlpq20wjuqxznmk0'
 relays = ['ws://host.docker.internal:7000', 'ws://localhost:7000']
 
 [mostro]
