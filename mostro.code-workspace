@@ -1,13 +1,16 @@
 {
 	"folders": [
 		{
-			"path": ".."
+			"path": "."
 		},
 		{
 			"path": "../../mostro_mobile"
 		},
 		{
 			"path": "../../rana"
+		},
+		{
+			"path": "../../mostro-cli"
 		}
 	],
 	"settings": {
